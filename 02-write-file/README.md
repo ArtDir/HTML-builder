@@ -1,49 +1,49 @@
-## Writing Console Input to File
+## Запись консольного ввода в файл
 
-In the `index.js` file in the `02-write-file` directory, develop a script that outputs a greeting to the console, waits for text input, and writes the entered text to a file.
+В файле `index.js` в директории `02-write-file` разработайте скрипт, который выводит приветствие в консоль, ожидает ввода текста и записывает введенный текст в файл.
 
-### General Rules
+### Общие правила
 
-- The use of any third-party modules is prohibited.
-- Each task must be executed <u>in the root directory</u> using the command `node <task folder name>`.
-- The use of synchronous functions from the **fs module**, such as `fs.statSync(path[, options])`, `fs.readFileSync(path[, options])`, and others found in the [synchronous API section](https://nodejs.org/api/fs.html#fs_synchronous_api), is prohibited.
+- Использование сторонних модулей запрещено.
+- Каждая задача должна быть выполнена <u>в корневой директории</u> с помощью команды `node <имя папки задания>`.
+- Использование синхронных функций из **fs модуля**, таких как `fs.statSync(path[, options])`, `fs.readFileSync(path[, options])` и других из раздела [synchronous API](https://nodejs.org/api/fs.html#fs_synchronous_api), запрещено.
 
-### Requirements
+### Требования
 
-- [ ] Inside the `02-write-file` folder, there is 1 file `index.js`.
-- [ ] When executing the command `node 02-write-file` <u>in the root directory of the repository</u>, a text file is created in the `02-write-file` folder, and a prompt for text input is displayed in the console (the text of prompt is of your choice).
-- [ ] After entering text, the entered text should be written to the previously created file in the `02-write-file` directory. The process does not terminate and awaits new input.
-- [ ] After the next input, the initially created text file is appended with new text, and the process continues to wait for input.
-- [ ] When pressing the `ctrl + c` key combination or entering `exit` into the console, a farewell phrase is displayed (the text of farewell phrase is of your choice), and the process terminates.
+- [ ] Внутри папки `02-write-file` находится 1 файл `index.js`.
+- [ ] При выполнении команды `node 02-write-file` <u>в корневой директории репозитория</u> создается текстовый файл в папке `02-write-file`, и в консоли отображается приглашение для ввода текста (текст приглашения на ваш выбор).
+- [ ] После ввода текста введенный текст должен быть записан в ранее созданный файл в директории `02-write-file`. Процесс не завершается и ожидает нового ввода.
+- [ ] После следующего ввода изначально созданный текстовый файл дополняется новым текстом, и процесс продолжает ожидать ввода.
+- [ ] При нажатии комбинации клавиш `ctrl + c` или вводе `exit` в консоль отображается прощальная фраза (текст прощальной фразы на ваш выбор), и процесс завершается.
 
-### Objectives
+### Цели
 
-- Strengthen understanding of the basics of working with events and streams in Node.js.
-- Work with the global **process** object.
+- Укрепить понимание основ работы с событиями и потоками в Node.js.
+- Работа с глобальным объектом **process**.
 
-### Description
+### Описание
 
-In this task, you will develop a program that reads your console input until the process is forcibly terminated with `ctrl + c` or the keyword `exit` is entered.
+В этой задаче вы разработаете программу, которая читает ваш консольный ввод до тех пор, пока процесс не будет принудительно завершен с помощью `ctrl + c` или не будет введено ключевое слово `exit`.
 
-The steps to complete the task are as follows:
+Шаги для выполнения задачи следующие:
 
-1. Import all required modules.
-2. Create a writable stream to a text file.
-3. Display a welcome message in the console.
-4. Wait for user input, with subsequent checking for the presence of the keyword `exit`.
-5. Write the entered text to the file.
-6. Wait for further input.
-7. Implement a farewell message when the process is stopped.
+1. Импортируйте все необходимые модули.
+2. Создайте поток записи в текстовый файл.
+3. Выведите приветственное сообщение в консоль.
+4. Ожидайте пользовательский ввод с последующей проверкой на наличие ключевого слова `exit`.
+5. Запишите введенный текст в файл.
+6. Ожидайте дальнейший ввод.
+7. Реализуйте прощальное сообщение при остановке процесса.
 
-### Tips
+### Советы
 
-To successfully complete this task, you will need to apply your knowledge of events and streams that you have acquired previously. Additionally, an understanding of the global **process** object and its capabilities is essential. Utilizing its events allows you to intercept signals sent to the process, such as the `ctrl + c` interrupt command.
+Для успешного выполнения этой задачи вам потребуется применить знания о событиях и потоках, которые вы получили ранее. Кроме того, важно понимание глобального объекта **process** и его возможностей. Использование его событий позволяет перехватывать сигналы, отправляемые процессу, такие как команда прерывания `ctrl + c`.
 
-Reading anything from a stream using the **Readline module** can be helpful. The standard input stream `stdin`, being a **ReadableStream**, is well-suited for this.
+Чтение чего-либо из потока с помощью **модуля Readline** может быть полезным. Стандартный поток ввода `stdin`, являясь **ReadableStream**, хорошо подходит для этого.
 
-##### Useful Links
+##### Полезные ссылки
 
-_Please note, if you are seeking information in Russian, be aware that translations of the documentation may be outdated. They might not include all the latest features of the modules. For the most current and accurate information, always refer to the official documentation!_
+_Пожалуйста, обратите внимание, если вы ищете информацию на русском языке, что переводы документации могут быть устаревшими. Они могут не включать все последние возможности модулей. Для получения самой актуальной и точной информации всегда обращайтесь к официальной документации!_
 
 - Process:
   - [Process](https://nodejs.org/api/process.html)
@@ -53,16 +53,16 @@ _Please note, if you are seeking information in Russian, be aware that translati
 - Readline:
   - [Readline](https://nodejs.org/api/readline.html)
   - [Node.js Readline() Module](https://www.geeksforgeeks.org/node-js-readline-module/)
-- Events:
+- События:
   - [Understanding Node.js Event-Driven Architecture](https://www.freecodecamp.org/news/understanding-node-js-event-driven-architecture-223292fcbc2d/)
   - [The Node.js Event emitter](https://nodejs.org/en/learn/asynchronous-work/the-nodejs-event-emitter)
   - [Events](https://nodejs.org/api/events.html)
   - [Events in Node.js](https://medium.com/@diego.coder/events-in-node-js-76fbe1b6cdad)
-- Streams:
+- Потоки:
   - [Stream](https://nodejs.org/api/stream.html)
   - [fs.createReadStream](https://nodejs.org/api/fs.html#fs_fs_createreadstream_path_options)
   - [Understanding Streams in Node.js](https://nodesource.com/blog/understanding-streams-in-nodejs/)
   - [Node.js Streams: Everything you need to know](https://www.freecodecamp.org/news/node-js-streams-everything-you-need-to-know-c9141306be93/)
-- Path Module:
+- Модуль Path:
   - [Path](https://nodejs.org/api/path.html)
   - [Node.js Path Module](https://www.javascripttutorial.net/nodejs-tutorial/nodejs-path-module/)

@@ -2,46 +2,46 @@
 
 ---
 
-### Objectives:
+### Цели:
 
-The main goal of this series of tasks is to understand the basics of working with the **Node.js** platform.
-You are offered to complete a series of small tasks with a gradual increase in complexity. The final touch will be the creation of a small application for building a static website.
+Основная цель этой серии задач - понять основы работы с платформой **Node.js**.
+Вам предлагается выполнить серию небольших заданий с постепенным увеличением сложности. Финальным штрихом станет создание небольшого приложения для сборки статического веб-сайта.
 
-Please note that most tasks can be accomplished in multiple ways, and at this stage, there are no incorrect approaches. Only the functionality of your code and adherence to the specified conditions will be evaluated.
+Обратите внимание, что большинство задач можно выполнить несколькими способами, и на данном этапе нет неправильных подходов. Оцениваться будет только функциональность вашего кода и соблюдение указанных условий.
 
 ---
 
-## Execution process
+## Процесс выполнения
 
-- Click on the green button `Use this template`
-- In the dropdown, choose the option `Create a new repository`
-- Enter the repository name (preferably name it **HTML-builder**)
-- Leave its visibility as **public**
-- Click the `Create repository` button
-- Send the link to the created repository to `Cross-Check: Submit` in RS App
-- Clone the created repository
-- Run the command `npm install` to install eslint, prettier and node.js typings that will assist you in completing the tasks
-- Complete the tasks. The specifications for each task are in the `README.md` file inside the task folder
-- Push the solution to your repository
+- Нажмите на зеленую кнопку `Use this template`
+- В выпадающем меню выберите опцию `Create a new repository`
+- Введите название репозитория (желательно назвать его **HTML-builder**)
+- Оставьте его видимость как **public**
+- Нажмите кнопку `Create repository`
+- Отправьте ссылку на созданный репозиторий в `Cross-Check: Submit` в RS App
+- Клонируйте созданный репозиторий
+- Выполните команду `npm install` для установки eslint, prettier и типов node.js, которые помогут вам в выполнении задач
+- Выполните задания. Спецификации для каждого задания находятся в файле `README.md` внутри папки задания
+- Отправьте решение в ваш репозиторий
 
-## Crosscheck
+## Кросс-чек
 
-The process for cross-checking is detailed in the repository's wiki.  
-Once the cross-check begins, access the guidelines by following [this link](https://github.com/rolling-scopes-school/HTML-builder/wiki) and adhere to the instructions provided on the page.
+Процесс кросс-проверки подробно описан в wiki репозитория.
+Когда начнется кросс-чек, перейдите к руководству по [этой ссылке](https://github.com/rolling-scopes-school/HTML-builder/wiki) и следуйте инструкциям на странице.
 
-### General Rules
+### Общие правила
 
-- The use of any third-party modules is strictly prohibited.
-- Each task must be executed <u>in the root directory</u> using the command `node <task folder name>`.
-- Utilizing synchronous functions from the **fs module**, such as `fs.statSync(path[, options])`, `fs.readFileSync(path[, options])`, and others found in the [Synchronous API section](https://nodejs.org/api/fs.html#fs_synchronous_api), is not allowed.
-- The use of the `setTimeout()` function is forbidden.
-- Task execution and verification should be carried out on the **LTS** version of Node.
+- Использование любых сторонних модулей строго запрещено.
+- Каждая задача должна выполняться <u>в корневой директории</u> с помощью команды `node <имя папки задания>`.
+- Использование синхронных функций из **fs модуля**, таких как `fs.statSync(path[, options])`, `fs.readFileSync(path[, options])` и других из раздела [Synchronous API](https://nodejs.org/api/fs.html#fs_synchronous_api), запрещено.
+- Использование функции `setTimeout()` запрещено.
+- Выполнение и проверка задач должны проводиться на **LTS** версии Node.
 
-## Table of Contents
+## Содержание
 
-[01 Reading a File with Console Output](https://github.com/rolling-scopes-school/HTML-builder/blob/main/01-read-file)  
-[02 Writing Console Input to File](https://github.com/rolling-scopes-school/HTML-builder/blob/main/02-write-file)  
-[03 Displaying Information about Files Stored in a Folder](https://github.com/rolling-scopes-school/HTML-builder/blob/main/03-files-in-folder)  
-[04 Copying a Directory](https://github.com/rolling-scopes-school/HTML-builder/blob/main/04-copy-directory)  
-[05 Building the CSS Bundle](https://github.com/rolling-scopes-school/HTML-builder/blob/main/05-merge-styles)  
-[06 Building an HTML Page from Components and Styles](https://github.com/rolling-scopes-school/HTML-builder/blob/main/06-build-page)
+[01 Чтение файла с выводом в консоль](https://github.com/rolling-scopes-school/HTML-builder/blob/main/01-read-file)  
+[02 Запись консольного ввода в файл](https://github.com/rolling-scopes-school/HTML-builder/blob/main/02-write-file)  
+[03 Вывод информации о файлах, хранящихся в папке](https://github.com/rolling-scopes-school/HTML-builder/blob/main/03-files-in-folder)  
+[04 Копирование директории](https://github.com/rolling-scopes-school/HTML-builder/blob/main/04-copy-directory)  
+[05 Сборка CSS бандла](https://github.com/rolling-scopes-school/HTML-builder/blob/main/05-merge-styles)  
+[06 Сборка HTML страницы из компонентов и стилей](https://github.com/rolling-scopes-school/HTML-builder/blob/main/06-build-page)
